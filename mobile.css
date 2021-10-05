@@ -1,0 +1,47 @@
+.menu-button{
+			width: 40px;
+			height: 40px;
+			display:none;
+			flex-direction: column;
+			justify-content: space-around;
+			/*background-color: green;*/
+		}
+		.menu-button>span{
+			height: 2px;
+			display:block;
+			background-color: black;
+		}
+		#m:checked~.menu-button>span:nth-child(2){
+			display: none;
+
+		}
+		.menu-button>span:first-child{
+			/*background-color:red;*/
+		}
+		#m:checked~.menu-button>span:first-child{
+			transform: translateY(11px) rotate(45deg);
+		}
+		.menu-button>span:last-child{
+			/*background-color: yellow;*/
+		}
+		#m:checked~.menu-button>span:last-child{
+			transform: translateY(-12px) rotate(-45deg);
+		}
+		.links{
+			display: flex;
+		}
+		@media (max-width:768px){
+			.links{
+				display: none;
+				flex-direction: column;
+			}
+			.menu-button{
+				display:flex;
+			}
+			#m:checked~.links{
+				display: flex;
+			}
+		}
+		#m{
+			display: none;
+		}
