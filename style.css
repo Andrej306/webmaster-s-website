@@ -24,7 +24,7 @@ header{
 	display: flex;
 	justify-content:space-around;
 }
-@media(max-width: 320px){
+@media(max-width: 760px){
 	.head_menu{
 		flex-wrap: wrap;
 	}
@@ -44,7 +44,7 @@ header{
 	min-width:0;
 	max-width:540px;
 }
-@media(max-width: 320px){
+@media(max-width: 760px){
 	.h_img{
 		max-width: 100%;
 		max-height: auto;
